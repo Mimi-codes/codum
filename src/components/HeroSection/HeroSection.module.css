@@ -1,0 +1,86 @@
+.hero {
+    background: #B6D0E2;
+    color: white;
+}
+
+.container {
+    margin-top: 4rem;
+}
+
+.variations {
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.perfect {
+    text-transform: uppercase;
+}
+
+
+
+.button {
+    border-radius: 50px;
+    padding: 1rem 3rem;
+    background: rgb(233, 154, 7);
+    border-style: none;
+    text-transform: uppercase;
+}
+
+.btn {
+    border-radius: 50px;
+    padding: 1rem 3rem;  
+    background: #B6D0E2;
+    border-style: white;
+    text-transform: uppercase;
+    margin-left:1rem;
+}
+
+
+
+/*MEDIA QUERY*/
+/*Mobile*/
+@media only screen and (max-width:480px) {
+
+    .container {
+        margin-top: 0.3rem;
+    }
+
+    .variations {
+        text-align: center;
+    }
+    
+    .perfect {
+        text-align: center;
+    }
+    
+    .passages {
+        text-align: center;
+    }
+    
+
+    .button {
+        border-radius: 50px;
+        padding: 1rem 3rem;
+        background: rgb(233, 154, 7);
+        border-style: none;
+        text-transform: uppercase;
+        display: block;
+        margin: 0 1rem 2rem 1rem;
+      
+    }
+    
+    .btn {
+        border-radius: 50px;
+        padding: 1rem 3rem;  
+        background: #B6D0E2;
+        border-style: rgb(233, 154, 7);
+        text-transform: uppercase;
+        margin-left:1rem;
+        display: block;
+        margin: 0 1rem 0 1rem;
+    }
+
+    .chair {
+    }
+
+}

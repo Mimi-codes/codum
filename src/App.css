@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Atma&family=Cookie&family=Lobster+Two:ital@1&family=Montserrat:wght@100&family=Nanum+Gothic&family=Roboto:ital,wght@0,100;1,100&family=Shadows+Into+Light&family=Short+Stack&display=swap');
+
+body {
+  font-family: 'Antic Slab', serif;
+font-family: 'Atma', cursive;
+font-family: 'Cookie', cursive;
+font-family: 'Lobster Two', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Short Stack', cursive;
+background-image: url('./assets/sincerely-media-56pMIREBAcg-unsplash.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+
+/*MEDIA QUERY*/
+/*Mobile*/
+@media only screen and (max-width:480px) {
+
+}

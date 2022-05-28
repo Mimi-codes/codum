@@ -1,0 +1,38 @@
+.products {
+    text-transform: uppercase;
+}
+
+.popular {
+    text-transform: uppercase;
+    margin-left: 40rem;
+    color: rgb(233, 154, 7);
+}
+
+.all {
+    text-transform: uppercase;
+}
+
+.container {
+    text-transform: uppercase;
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.container a {
+    text-decoration: none;
+    color: black;
+}
+
+.container a:active {
+color: gray;
+}
+
+.container a:hover {
+    color: rgb(233, 154, 7);
+}
+
+/*MEDIA QUERY*/
+/*Mobile*/
+@media only screen and (max-width:480px) {
+
+}
