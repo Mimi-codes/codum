@@ -7,15 +7,29 @@ import classes from '../ProductItem/ProductItemForm.module.css';
 import CartContext from '../../../store/cart-context';
 
 const ProductItemForm = (props) => {
+const [quantityIsValid, setQuantityIsValid] =  useState(true)
 const quantityInputRef =  useRef();
   
+//test
+const [updateBadge, setUpdateBadge] = useState(false)
+
 const cartCtx =  useContext(CartContext);
 
 const submitHandler = event => {
+setUpdateBadge(true)
 event.preventDefault();
 
 const enteredQuantity = quantityInputRef.current.value;
 const totalQty= +enteredQuantity;
+
+if (enteredQuantity.trim().length === 0 || 
+totalQty < 1 ||
+totalQty > 5 ) {
+  setQuantityIsValid(false);
+  return;
+}
+
+
 
 const itemInCart={
   id: props.item.id,
@@ -30,7 +44,7 @@ cartCtx.items.push( itemInCart)
       <form className = {classes.form} >
           <Input 
            ref={quantityInputRef}
-              label='Amount' 
+              label='Quantity' 
               input={{ 
               id:'azzquantity',
               type:'number',
@@ -40,8 +54,8 @@ cartCtx.items.push( itemInCart)
               defaultValue: '1',
           }} />
           
-    <Button variant="secondary" onClick={submitHandler}>ADD TO CART</Button>
-     {/* // {!amountIsValid && <p>Please enter a valid amount (1-5).</p>} */}
+          <Button variant="secondary" onClick={submitHandler}>ADD TO CART</Button> 
+      {!quantityIsValid && <p>Please enter a valid amount (1-5).</p>} 
       </form>
   )
 }

@@ -4,10 +4,10 @@ import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 // import Cart from './NavCartButton';
 import NavCartButton from './NavCartButton';
 
-
 const NavBar = (props) => {
 return (
-    <Navbar bg="" expand="lg" >
+
+  <Navbar bg="" expand="lg" >
   <Container>
     <Navbar.Brand href="#home"className={classes.title} >FURNITURE</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -24,6 +24,7 @@ return (
     </Navbar.Collapse>
   </Container>
 </Navbar>
+
 )
 }
 

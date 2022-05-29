@@ -23,7 +23,7 @@ const DUMMY_ITEMS = [
 
 const AvailableProducts = (props) => {
   const cartCtx =  useContext(CartContext);
-
+ 
 
   var settings = {
     dots: true,
@@ -78,7 +78,7 @@ const AvailableProducts = (props) => {
 </div>
 ))}
         </Slider>
-
+ 
 </>
 )
 }
