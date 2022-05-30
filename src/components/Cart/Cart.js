@@ -9,7 +9,8 @@ import CheckOut from './CheckOut';
 
 const Cart = (props) => {
    const [isCheckOut, setIsCheckOut] = useState(false);
-   
+   const [isSubmitting, setIsSubmitting] = useState(false)
+   const [didSubmit, setDidSubmit] = useState(false)
     const cartCtx = useContext(CartContext);
 
 const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
@@ -28,6 +29,16 @@ const orderHandler = () => {
 setIsCheckOut(true);
 }
 
+
+//Submitting and sending cart data
+const submitOrderHandler = (userData) => {
+  setIsSubmitting(true);
+//to be completed await fetch()
+setIsSubmitting(false);
+setDidSubmit(true);
+}
+
+
  const cartItems = (
 <ul className={classes['cart-items']}>
 {cartCtx.items.map((item) => (
@@ -44,25 +55,36 @@ onAdd={cartItemAddHandler.bind(null, item)}
  </ul>
  );
  
-const modalActions =   <div className={classes.actions}>
+const modalActions = 
+  <div className={classes.actions}>
               <button className={classes['button--alt']} onClick={props.onClose}>Close</button>
-            {hasItems && <button className={classes.button} onClick={orderHandler}>Order</button>}
+            {hasItems && <button className={classes.button} onClick={orderHandler}>Order</button>
+            }
           </div>
 
+const CartModalContent = (
+  <>
+   {cartItems}
+          <div className={classes.total}>
+              <span className={classes['total-amount-1']}>Total Amount</span>
+              <span className={classes['total-amount']}>{totalAmount}</span>
+              </div>
+
+{isCheckOut && <CheckOut onSubmit = {submitOrderHandler} onCancel={props.onClose} />}
+{!isCheckOut && modalActions}
+  </>
+);
+
+const isSubmittingModalContent =  <p>Sending order data...</p>
+
+const didSubmitModalContent =  <p>Successfully sent the order!</p>
 
     return (
       <Modal onClose={props.onClose}>
-          {cartItems}
-          <div className={classes.total}>
-              <span>Total Amount</span>
-              <span>{totalAmount}</span>
-              </div>
-
-{isCheckOut && <CheckOut onCancel={props.onClose} />}
-{!isCheckOut && modalActions}
-
-      
-      </Modal>
+        {!isSubmitting && !didSubmit && CartModalContent}
+        {isSubmitting && isSubmittingModalContent}
+        {!isSubmitting && didSubmit && didSubmitModalContent}
+        </Modal>
   )
 }
 

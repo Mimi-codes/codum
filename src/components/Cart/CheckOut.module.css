@@ -1,0 +1,74 @@
+.form {
+    margin: 1rem 0;
+    height: 19rem;
+    overflow: scroll;
+    text-align: center;
+}
+
+.control {
+    margin-bottom: 0.5rem;
+}
+
+.control label {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.control input {
+font: inherit;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    gap: 1rem;
+}
+
+.submit {
+    border-radius: 40rem;
+    border-color: #8a2b06;
+    color: white;
+    background: #5f240d;
+    padding: 10px;
+    width: 90px;
+    margin-left: 3px;
+
+}
+
+.cancel{
+border-radius: 40rem;
+background: #5f240d;
+border-color: #8a2b06;
+color: white;
+padding: 10px;
+width: 90px;
+margin-left: 3px;
+}
+
+.submit:hover {
+    background: white;
+    color: #5f240d;
+}
+
+
+.cancel:hover {
+    background: white;
+    color: #5f240d;
+}
+
+.invalid label {
+    color: #ca3e51;
+}
+
+.invalid input {
+    border-color: #aa0b20;
+    background: #ffeff1;
+}
+
+
+
+
+
+
