@@ -6,8 +6,7 @@ import NavCartButton from './NavCartButton';
 
 const NavBar = (props) => {
 return (
-
-  <Navbar bg="" expand="lg" >
+  <Navbar bg="" expand="lg" fixed='top' className={classes.nav} >
   <Container>
     <Navbar.Brand href="#home"className={classes.title} >FURNITURE</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -19,12 +18,11 @@ return (
         <Nav.Link href="#link" className={classes.about}>Contact Us</Nav.Link>
         <Button href="#" className={classes.btn} variant="outline-light" onClick={props.onClick}>
           <NavCartButton /></Button> 
-        <Button href="#" className={classes.button} variant="outline-light">Log In</Button> 
+        <Button href="#" className={classes.button} variant="outline-light" >Log In</Button> 
       </Nav>
     </Navbar.Collapse>
   </Container>
 </Navbar>
-
 )
 }
 

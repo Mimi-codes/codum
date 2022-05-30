@@ -12,6 +12,7 @@ const HeroSection = (props) => {
 
     return (
         <>
+  <>
         <div className={classes.hero}>
         <NavBar onClick={props.onShowCart}/>
        <Container className={classes.container}>
@@ -33,6 +34,7 @@ const HeroSection = (props) => {
   </Container>
         </div>
         </>
+      </>
     )
 }
 export default HeroSection;//rendered in App.js

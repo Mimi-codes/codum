@@ -61,9 +61,10 @@ const AvailableProducts = (props) => {
   }
   return (
 <>
+<div className={classes.items}>
         <Slider {...settings}>
         {DUMMY_ITEMS.map((item) => (
-                     <div>
+                     <div className={classes.item}>
         <Card style={{ width: '18rem' }} className={classes.card}>
 <Card.Img variant="top" src={item.img} />
 <Card.Body className={classes['card-text']}>
@@ -78,7 +79,7 @@ const AvailableProducts = (props) => {
 </div>
 ))}
         </Slider>
- 
+        </div>
 </>
 )
 }
