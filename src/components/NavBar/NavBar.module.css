@@ -11,15 +11,15 @@
     }
     
     .home {
-        margin-left: 29rem;
-        margin-right: 1rem;
+        margin-left: 30rem;
+        /* margin-right: 1rem; */
         font-size: 1.1rem;
         color: white;
     }
     
     .btn {
         border-radius: 50px;
-        padding: 1rem 3rem;
+        padding: 1rem 1rem;
         background: rgb(233, 154, 7);
         border-style: none; 
         margin-right: 1.5rem;
@@ -28,7 +28,7 @@
     
     .button {
         border-radius: 50px;
-        padding: 1rem 3rem;
+        padding: 1rem 1rem;
         background: rgb(233, 154, 7);
         border-style: none; 
     }

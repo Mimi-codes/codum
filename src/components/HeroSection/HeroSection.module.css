@@ -42,7 +42,7 @@ padding-top: 10rem;
 @media only screen and (max-width:480px) {
 
     .container {
-        margin-top: 0.3rem;
+        padding-top: 0.3rem;
     }
 
     .variations {

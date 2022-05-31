@@ -1,20 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Atma&family=Cookie&family=Lobster+Two:ital@1&family=Montserrat:wght@100&family=Nanum+Gothic&family=Roboto:ital,wght@0,100;1,100&family=Shadows+Into+Light&family=Short+Stack&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Arima+Madurai:wght@100&family=Atma&family=Berkshire+Swash&family=Cookie&family=Handlee&family=Lobster+Two:ital@1&family=Montserrat:wght@100&family=Nanum+Gothic&family=Roboto:ital,wght@0,100;1,100&family=Saira+Condensed:wght@100&family=Shadows+Into+Light&family=Short+Stack&display=swap');
 
 body {
-  font-family: 'Antic Slab', serif;
+font-family: 'Antic Slab', serif;
 font-family: 'Atma', cursive;
 font-family: 'Cookie', cursive;
+font-family: 'Handlee', cursive;
 font-family: 'Lobster Two', cursive;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Nanum Gothic', sans-serif;
 font-family: 'Roboto', sans-serif;
+font-family: 'Saira Condensed', sans-serif;
 font-family: 'Shadows Into Light', cursive;
 font-family: 'Short Stack', cursive;
-background-image: url('./assets/sincerely-media-56pMIREBAcg-unsplash.jpg');
-background-repeat: no-repeat;
-background-size: cover;
 }
-
 
 
 /*MEDIA QUERY*/

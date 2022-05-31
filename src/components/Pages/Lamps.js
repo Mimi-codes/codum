@@ -1,11 +1,11 @@
 import React from 'react'
 import AvailableProducts from '../Products/ProductItem/AvailableProducts';
 
-const Chair = () => {
+const Lamps = () => {
 
   return (
   <AvailableProducts />
     )
 }
 
-export default Chair; //rendered in App.js
+export default Lamps; //rendered in App.js

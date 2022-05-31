@@ -3,10 +3,15 @@ import { useState } from 'react';
 import './App.css';
 import HeroSection from './components/HeroSection/HeroSection';
 import Products from './components/Products/Products';
-import {Route} from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 import Cart from './components/Cart/Cart';
 import CartProvider from './store/CartProvider';
+import Sofa from './components/Pages/Sofa';
+import Popular from './components/Pages/Popular';
+import Chair from './components/Pages/Chair';
+import Lamps from './components/Pages/Lamps';
+import All from './components/Pages/All';
 
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
@@ -43,7 +48,16 @@ function App() {
     <HeroSection onShowCart={showCartHandler} />
     <Products />
     </CartProvider>
-
+<div>
+  <Routes>
+  <Route path='/sofa' element = {<Sofa />} />
+  <Route path='/popular' element = {<Popular />} />
+  <Route path='/all' element = {<All />} />
+  <Route path='/sofa' element = {<Sofa />} />
+  <Route path='/lamps' element = {<Lamps />} />
+  <Route path='/chair' element = {<Chair />} />
+      </Routes>
+      </div>
     
     <Footer />
     </>  
