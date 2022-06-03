@@ -11,7 +11,7 @@
 .modal {
     position: fixed;
     transform: translateX(-50%);
-    top: 7vh;
+    top: 18vh;
     left: 50%;
     width: 30%;
     background: white;

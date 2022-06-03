@@ -60,23 +60,23 @@ padding-top: 10rem;
 
     .button {
         border-radius: 50px;
-        padding: 1rem 3rem;
+        padding: 1rem 1.5rem;
         background: rgb(233, 154, 7);
         border-style: none;
         text-transform: uppercase;
         display: block;
-        margin: 0 4rem 2rem 4rem;
+        margin: 0 2rem 2rem 2rem;
       
     }
     
     .btn {
         border-radius: 50px;
-        padding: 1rem 3rem;  
+        padding: 1rem 1.5rem;  
         background: #B6D0E2;
         border-color: rgb(233, 154, 7);
         text-transform: uppercase;
         display: block;
-        margin: 0 4rem 0 4rem;
+        margin: 0 2rem 0 2rem;
         border-radius: 50px;
     }
 

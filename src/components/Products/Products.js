@@ -4,7 +4,7 @@ import { Row, Col, Navbar, Nav, Container } from 'react-bootstrap';
 // import ProductItemForm from './ProductItemForm';
 import CartContext from '../../store/cart-context';
 import AvailableProducts from './ProductItem/AvailableProducts';
-import { NavLink} from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 const Products = (props) => {
   
@@ -16,19 +16,19 @@ const Products = (props) => {
 <h4>products</h4>
     </Col>
     <Col xs={3} md={1}>
-    <NavLink activeClassName={classes.active} to="/popular" id='popular'>popular:</NavLink> 
+    <Link to="/popular">popular:</Link> 
     </Col>
     <Col xs={2} md={1}>
-    <NavLink activeClassName={classes.active} to="/all" id='all'>all</NavLink> 
+    <Link to="/all">all</Link> 
     </Col>
     <Col xs={2} md={1}>
-    <NavLink activeClassName={classes.active} to="/sofa" id='sofa'>sofa</NavLink> 
+    <Link to="/sofa">sofa</Link> 
+        </Col>
+    <Col xs={2} md={1}>
+    <Link to="/lamp">lamp</Link> 
     </Col>
     <Col xs={2} md={1}>
-    <NavLink activeClassName={classes.active} to="/lamps" id='lamps'>lamps</NavLink> 
-    </Col>
-    <Col xs={2} md={1}>
-    <NavLink activeClassName={classes.active} to="/chair" id='chair'>chair</NavLink> 
+    <Link to="/chair">chair</Link> 
     </Col>
   </Row>
 </Container>

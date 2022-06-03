@@ -19,7 +19,7 @@ function Footer() {
 {/* </Row> */}
 {/* </Container> */}
 
-<footer className={'classes.footer'}>
+<footer className={classes.footer}>
     <Container className={classes.container}>
     <Row className={classes.row}>
       <Col xs={12} lg ={4}>

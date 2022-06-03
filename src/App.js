@@ -3,7 +3,6 @@ import { useState } from 'react';
 import './App.css';
 import HeroSection from './components/HeroSection/HeroSection';
 import Products from './components/Products/Products';
-import {Route, Routes} from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 import Cart from './components/Cart/Cart';
 import CartProvider from './store/CartProvider';
@@ -12,8 +11,12 @@ import Popular from './components/Pages/Popular';
 import Chair from './components/Pages/Chair';
 import Lamps from './components/Pages/Lamps';
 import All from './components/Pages/All';
+import AboutUs from './components/Pages/AboutUs'
+import NavBar from './components/NavBar/NavBar';
+import LogIn from './components/NavBar/LogIn';
 
-function App() {
+
+function App(props) {
   const [cartIsShown, setCartIsShown] = useState(false);
 
   const showCartHandler = () => {
@@ -43,22 +46,14 @@ function App() {
 
   return (
     <>
+ {/* <NavBar onClick={props.onShowCart}/> */}
 <CartProvider>
 {cartIsShown && <Cart onClose={hideCartHandler} />}
     <HeroSection onShowCart={showCartHandler} />
     <Products />
     </CartProvider>
-<div>
-  <Routes>
-  <Route path='/sofa' element = {<Sofa />} />
-  <Route path='/popular' element = {<Popular />} />
-  <Route path='/all' element = {<All />} />
-  <Route path='/sofa' element = {<Sofa />} />
-  <Route path='/lamps' element = {<Lamps />} />
-  <Route path='/chair' element = {<Chair />} />
-      </Routes>
-      </div>
-    
+
+ 
     <Footer />
     </>  
   );

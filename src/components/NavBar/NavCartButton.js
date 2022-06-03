@@ -18,8 +18,8 @@ const numberOfCartItems = cartCtx.items.length;
 //test
 const [updateBadge, setUpdateBadge] = useState(false)
 
-const submitHandler = () => {
-  setUpdateBadge(true)
+const submitHandler = (props) => {
+  // setUpdateBadge(true)
 }
 
   return (
