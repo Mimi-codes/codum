@@ -7,6 +7,7 @@ import Image from 'react-bootstrap/Image'
 import Cart from '../Cart/Cart';
 import { useState } from 'react';
 import NavCartButton from '../NavBar/NavCartButton';
+import { Link } from 'react-router-dom';
 
 const HeroSection = (props) => {
 
@@ -23,8 +24,8 @@ const HeroSection = (props) => {
       <p className={classes.passages}>There are many variations of passages of lorem ipsum available
       but many have suffered</p>
     
-      <Button href="#" className={classes.button} variant="outline-light">buy now</Button> 
-      <Button href="#" className={classes.btn} variant="outline-light">read more</Button> 
+      <Button className={classes.button} variant="outline-light"><Link to='/buy' className={classes.link}>buy now</Link></Button> 
+      <Button className={classes.btn} variant="outline-light"><Link to='/more' className={classes.link}>read more</Link></Button> 
     
     </Col>
     <Col xs={12} md={6}>

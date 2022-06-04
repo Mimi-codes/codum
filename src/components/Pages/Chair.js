@@ -1,16 +1,20 @@
 import React from 'react'
 import Footer from '../Footer/Footer';
 import HeroSection from '../HeroSection/HeroSection';
+import NavBar from '../NavBar/NavBar';
 import AvailableProducts from '../Products/ProductItem/AvailableProducts';
-import Products from '../Products/Products';
+import ProductsNav from '../Products/ProductsNav';
+import classes from './BuyNow.module.css'
 
 const Chair = () => {
 
   return (
     <>
-  <HeroSection />
-  <Products />
+    <NavBar />
+  <div className={classes.main}>
+  <ProductsNav />
   <AvailableProducts />
+  </div>
   <Footer />
     </>
     )

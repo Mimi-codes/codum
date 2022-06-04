@@ -10,13 +10,10 @@ const ProductItemForm = (props) => {
 const [quantityIsValid, setQuantityIsValid] =  useState(true)
 const quantityInputRef =  useRef();
   
-//test
-const [updateBadge, setUpdateBadge] = useState(false)
 
 const cartCtx =  useContext(CartContext);
 
 const submitHandler = event => {
-setUpdateBadge(true)
 event.preventDefault();
 
 const enteredQuantity = quantityInputRef.current.value;
@@ -54,7 +51,7 @@ cartCtx.items.push( itemInCart)
               defaultValue: '1',
           }} />
           
-          <Button variant="secondary" onClick={submitHandler}>ADD TO CART</Button> 
+          <Button variant="secondary" onClick={submitHandler} className={classes.btn}>ADD TO CART</Button> 
       {!quantityIsValid && <p>Please enter a valid amount (1-5).</p>} 
       </form>
   )

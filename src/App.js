@@ -6,14 +6,6 @@ import Products from './components/Products/Products';
 import Footer from './components/Footer/Footer';
 import Cart from './components/Cart/Cart';
 import CartProvider from './store/CartProvider';
-import Sofa from './components/Pages/Sofa';
-import Popular from './components/Pages/Popular';
-import Chair from './components/Pages/Chair';
-import Lamps from './components/Pages/Lamps';
-import All from './components/Pages/All';
-import AboutUs from './components/Pages/AboutUs'
-import NavBar from './components/NavBar/NavBar';
-import LogIn from './components/NavBar/LogIn';
 
 
 function App(props) {

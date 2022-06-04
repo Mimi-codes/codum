@@ -10,20 +10,18 @@ const NavBar = (props) => {
 return (
   <Navbar bg="" expand="lg" fixed='top' className={classes.nav} >
   <Container>
-    <Navbar.Brand href="#home"className={classes.title} >FURNITURE</Navbar.Brand>
+    <Navbar.Brand className={classes.title} >FURNITURE</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="me-auto mt-4">
-        <Nav.Link href="#home" className={classes.home}> <Link to="/" className={classes.link}>Home</Link> </Nav.Link>
-        <Nav.Link href="#link" className={classes.about}>About Us</Nav.Link>
-        <Nav.Link href="#link" className={classes.about}>Blog</Nav.Link>
-        <Nav.Link href="#link" className={classes.about}>Contact Us</Nav.Link>
-        <Button href="#" className={classes.btn} variant="outline-light"  onClick ={props.onClick}>
+      <Nav className="me-auto mt-4 links">
+        <Nav.Link  className={classes.home}> <Link to="/" className={classes.link}>Home</Link> </Nav.Link>
+        <Nav.Link  className={classes.about}><Link to='/about' className={classes.link}>About</Link></Nav.Link>
+        <Nav.Link  className={classes.about}><Link to='/blog' className={classes.link}>Blog</Link></Nav.Link>
+        <Nav.Link  className={classes.about}> <Link to='/contact' className={classes.link}>Contact Us</Link></Nav.Link>
+        <Button  className={classes.btn} variant="outline-light"  onClick ={props.onClick}>
           <NavCartButton /></Button> 
         <Button className={classes.button} variant="outline-light" > <Link to="/login" className={classes.link}>Log In</Link> </Button> 
         
-    {/* <NavLink activeClassName={classes.active} to="/login" id='login'><Button className={classes.button} variant="outline-light" >Log In</Button></NavLink>  */}
-    
       </Nav>
     </Navbar.Collapse>
   </Container>

@@ -14,14 +14,6 @@ const cartCtx = useContext(CartContext);
 const numberOfCartItems = cartCtx.items.length;
 // console.log(numberOfCartItems);
 
-
-//test
-const [updateBadge, setUpdateBadge] = useState(false)
-
-const submitHandler = (props) => {
-  // setUpdateBadge(true)
-}
-
   return (
       <div>
           <span></span>

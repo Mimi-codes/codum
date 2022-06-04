@@ -12,6 +12,11 @@ import Chair from './components/Pages/Chair';
 import LogIn from './components/NavBar/LogIn';
 import NavBar from './components/NavBar/NavBar';
 import SignUp from './components/Pages/SignUp';
+import Contact from './components/NavBar/Contact';
+import Blog from './components/NavBar/Blog';
+import About from './components/NavBar/About';
+import ReadMore from './components/Pages/ReadMore';
+import BuyNow from './components/Pages/BuyNow';
 
 const root = ReactDOM.createRoot(
   document.getElementById("root")
@@ -28,6 +33,12 @@ root.render(
       <Route path="login" element={<LogIn />} />
       <Route path="/" element={<NavBar />} />
       <Route path="/signup" element={<SignUp />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/more" element={<ReadMore />} />
+      <Route path="/buy" element={<BuyNow />} />
+
     </Routes>
   </BrowserRouter>
 );

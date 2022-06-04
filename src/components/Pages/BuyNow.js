@@ -4,18 +4,19 @@ import NavBar from '../NavBar/NavBar';
 import AvailableProducts from '../Products/ProductItem/AvailableProducts';
 import ProductsNav from '../Products/ProductsNav';
 import classes from './BuyNow.module.css'
-const Lamps = () => {
+
+const BuyNow = () => {
 
   return (
     <>
     <NavBar />
-    <div className={classes.main}>
-  <ProductsNav />
-  <AvailableProducts />
-  </div>
-  <Footer />
-    </>
+   <div className={classes.main}>
+   <ProductsNav />
+   <AvailableProducts />
+   </div>
+   <Footer />
+  </>
     )
 }
 
-export default Lamps; //rendered in App.js
+export default BuyNow; //rendered in App.js

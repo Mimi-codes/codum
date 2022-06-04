@@ -43,13 +43,16 @@
         color: white;
     }
 
-    .link:hover {
+
+    .about :active {
+        color: rgb(46, 46, 202);
+    }
+
+    .link:hover{
         color: rgb(97, 97, 97);
     }
     
-    .link:active {
-        color: rgb(46, 46, 202);
-    }
+
     
     /*MEDIA QUERY*/
     /*Mobile*/
