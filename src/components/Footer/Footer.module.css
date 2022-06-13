@@ -11,7 +11,7 @@
 }
 
 .footer {
-    margin-left: 5rem;
+    margin-left: 3rem;
 }
 
 .container p {
@@ -43,6 +43,10 @@
 /*Mobile*/
 @media only screen and (max-width:480px) {
 
+    .footer {
+        margin-left: 0;
+    }
+
     .container  {
         margin-top: 1rem;
     }
@@ -60,18 +64,21 @@
         text-align: center;
     }
     
-    .useful {
-        text-transform: capitalize;
+
+    .useful h4 {
+        margin-bottom: 0.5rem;
+        margin-top: 1rem;
     }
     
     .useful a {
         text-align: center;
-        margin-top: 0.5rem;
+        margin-top: 0.1rem;
     }
     
     .right {
-        padding-top: 5rem;
+        padding-top: 1.5rem;
         text-align: center;
+        font-size: xx-small;
     }
     
 

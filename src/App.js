@@ -6,6 +6,7 @@ import Products from './components/Products/Products';
 import Footer from './components/Footer/Footer';
 import Cart from './components/Cart/Cart';
 import CartProvider from './store/CartProvider';
+import NavBar from './components/NavBar/NavBar';
 
 
 function App(props) {
@@ -38,10 +39,10 @@ function App(props) {
 
   return (
     <>
- {/* <NavBar onClick={props.onShowCart}/> */}
-<CartProvider>
+    <CartProvider>
+ <NavBar onShowCart={showCartHandler}/>
 {cartIsShown && <Cart onClose={hideCartHandler} />}
-    <HeroSection onShowCart={showCartHandler} />
+    <HeroSection />
     <Products />
     </CartProvider>
 

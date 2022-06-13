@@ -16,6 +16,7 @@ const cartCtx =  useContext(CartContext);
 const submitHandler = event => {
 event.preventDefault();
 
+
 const enteredQuantity = quantityInputRef.current.value;
 const totalQty= +enteredQuantity;
 
@@ -26,8 +27,6 @@ totalQty > 5 ) {
   return;
 }
 
-
-
 const itemInCart={
   id: props.item.id,
 name: props.item.name, 
@@ -35,6 +34,7 @@ quantity: totalQty,
 price:props.item.price
 }
 cartCtx.items.push( itemInCart)
+console.log(itemInCart)
 }
 
   return (
@@ -43,7 +43,6 @@ cartCtx.items.push( itemInCart)
            ref={quantityInputRef}
               label='Quantity' 
               input={{ 
-              id:'azzquantity',
               type:'number',
               min: '1',
               max:'5',

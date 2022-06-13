@@ -1,18 +1,17 @@
 .contact-us {
-    margin-top: 14rem;
+    margin-top: 10rem;
 }
 
 
 .contact {
     box-shadow: 0 4px 8px 0px rgb(0 0 0 / 80%);
     background: whitesmoke;
-    width: 40rem;
+    width: 32rem;
     border-radius: 5px;
-    margin-left: 32rem;
     padding-bottom: 1.5rem;
     padding-top: 0.5rem;
     margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
 }
 
 .contact h5 {
@@ -21,27 +20,32 @@
 }
 
 .contact form {
-    margin: 0 9rem 0 9rem;
+    margin: 0 ;
 }
 
 
 .contact input {
     text-align: center;
     display: block;
-    margin: 1.5rem 0;
-    padding: 0.5rem 3rem;
+    margin: 1.5rem 1rem 0 4rem;
+    width: 24rem;
+    padding: 0.5rem 0rem;
     justify-content: center;
     border: 2px solid rgb(233, 154, 7);
 }
 
+
+
+
 .btn {
-margin: 0.5rem 3.5rem 2rem 3.5rem;
+margin: 1.5rem 1rem 2rem 4rem;
 background: rgb(233, 154, 7);
-padding: 0.5rem 3rem;
+padding: 0.5rem 0rem;
 border-radius: 5px;
 color: white;
 text-align: center;
 border-style: none;
+width: 24rem;
 }
 
 .contact textarea {
@@ -59,11 +63,11 @@ border-style: none;
 }
 
 .message {
-    margin: 0.5rem 0rem;
-    padding: 0.5rem 3rem;
+    margin: 1.5rem 1rem 0 4rem;
+    padding: 0.5rem 0rem;
     border-radius: 5px;
     border: 0.5px solid rgb(233, 154, 7);;
-    width: 21rem;
+    width: 24rem;
 }
 
 
@@ -71,53 +75,48 @@ border-style: none;
 /*Mobile*/
 @media only screen and (max-width:480px) {
 
-    .contact-us {
-        margin-top: 7rem;
+.contact-us {
+        margin-top: 2.5rem;
     }
 
     .contact {
         box-shadow: 0 4px 8px 0px rgb(0 0 0 / 80%);
         background: whitesmoke;
-        width: 19rem;
+        width: 18rem;
         border-radius: 5px;
-        margin: 3rem 2rem 2rem 2rem;
+        margin: 3rem 0rem 2rem 2rem;
         padding-bottom: 1.5rem;
         padding-top: 0.5rem;
     }
 
     .contact h5 {
-        margin: 2.5rem 1.5rem 1rem 1.5rem;
+        text-align: center;
     }
     
-
     .contact p {
-    margin: 0 1.5rem; 
+    text-align: center; 
     }
     
     .contact input {
         text-align: center;
         display: block;
-        margin: 1.5rem 2rem;
-        width: 15rem;
-        padding: 0.5rem 3rem;
+        margin: 1.5rem 0rem;
+        width: 16rem;
+        padding: 0.5rem 0rem;
         justify-content: center;
-        border: 2px solid rgb(233, 154, 7);
-        /* border: 1.5px rgb(233, 154, 7); */
+        border: 0.5px solid rgb(233, 154, 7);
     }
 
 .message {
-    margin: 0.5rem 2rem;
-    width: 15rem;
+    margin: 0.5rem 0rem;
+    width: 16rem;
     
 }
 
 .btn {
-    
-margin: 0.5rem 4rem 2rem 4rem;
-width: 10rem;
+margin: 0.5rem 0rem 2rem 0rem;
+width: 16rem;
 }
-
-
 
 
 }

@@ -46,7 +46,7 @@ padding-top: 10rem;
 @media only screen and (max-width:480px) {
 
     .container {
-        padding-top: 0.3rem;
+        padding-top: 3.5rem;
     }
 
     .variations {
@@ -64,24 +64,26 @@ padding-top: 10rem;
 
     .button {
         border-radius: 50px;
-        padding: 1rem 1.5rem;
+        padding: 0.8rem 1rem;
         background: rgb(233, 154, 7);
         border-style: none;
         text-transform: uppercase;
         display: block;
-        margin: 0 2rem 2rem 2rem;
+        margin: 2rem 2rem 2rem 2rem;
+        width: 18rem;
       
     }
     
     .btn {
         border-radius: 50px;
-        padding: 1rem 1.5rem;  
+        padding: 0.8rem 1rem;  
         background: #B6D0E2;
         border-color: rgb(233, 154, 7);
         text-transform: uppercase;
         display: block;
-        margin: 0 2rem 0 2rem;
+        margin: 0 2rem 2rem 2rem;
         border-radius: 50px;
+        width: 18rem;
     }
 
     .chair {

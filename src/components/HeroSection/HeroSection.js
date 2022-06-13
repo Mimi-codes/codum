@@ -1,21 +1,15 @@
 import React from 'react';
 import classes from './HeroSection.module.css';
-import NavBar from '../NavBar/NavBar';
 import {Container, Row, Col, Button} from 'react-bootstrap';
 import img from '../../assets/choc-cake.png';
-import Image from 'react-bootstrap/Image'
-import Cart from '../Cart/Cart';
-import { useState } from 'react';
-import NavCartButton from '../NavBar/NavCartButton';
+import Image from 'react-bootstrap/Image';
 import { Link } from 'react-router-dom';
 
 const HeroSection = (props) => {
 
     return (
-        <>
   <>
         <div className={classes.hero}>
-        <NavBar onClick={props.onShowCart}/>
        <Container className={classes.container}>
         <Row>
     <Col xs={12} md={6}>
@@ -34,7 +28,7 @@ const HeroSection = (props) => {
   </Row>
   </Container>
         </div>
-        </>
+      
       </>
     )
 }

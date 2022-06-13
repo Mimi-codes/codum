@@ -53,7 +53,7 @@ const AvailableProducts = (props) => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1
         }
       }
@@ -64,7 +64,7 @@ const AvailableProducts = (props) => {
 <div className={classes.items}>
         <Slider {...settings}>
         {DUMMY_ITEMS.map((item) => (
-                     <div className={classes.item}>
+                  <div className={classes.item}>
         <Card style={{ width: '18rem' }} className={classes.card}>
 <Card.Img variant="top" src={item.img} />
 <Card.Body className={classes['card-text']}>

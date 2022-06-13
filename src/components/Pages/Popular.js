@@ -1,15 +1,27 @@
 import React from 'react'
 import Footer from '../Footer/Footer';
-import NavBar from '../NavBar/NavBar';
 import AvailableProducts from '../Products/ProductItem/AvailableProducts';
 import ProductsNav from '../Products/ProductsNav';
 import classes from './BuyNow.module.css'
+import { useState } from 'react';
+import NavBar from '../NavBar/NavBar';
+import Cart from '../Cart/Cart';
 
 const Popular = () => {
+  const [cartIsShown, setCartIsShown] = useState(false);
+
+  const showCartHandler = () => {
+    setCartIsShown(true);
+  }
+
+  const hideCartHandler = () => {
+    setCartIsShown(false);
+  }
 
   return (
     <>
-    <NavBar />
+    <NavBar  onShowCart={showCartHandler}/>
+    {cartIsShown && <Cart onClose={hideCartHandler} />}
 <div className={classes.main}>    
     <ProductsNav />
   <AvailableProducts />
@@ -19,4 +31,4 @@ const Popular = () => {
   )
 }
 
-export default Popular; //rendered in App.js
+export default Popular; //rendered in index.js

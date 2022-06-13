@@ -14,4 +14,4 @@ const ReadMore = () => {
     )
 }
 
-export default ReadMore; //rendered in App.js
+export default ReadMore; //rendered in index.js

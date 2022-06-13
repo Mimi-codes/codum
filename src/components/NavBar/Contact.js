@@ -1,15 +1,31 @@
 import React from 'react'
-import { Navbar } from 'react-bootstrap';
 import Footer from '../Footer/Footer';
 import NavBar from './NavBar';
 import classes from './Contact.module.css';
+import { useState } from 'react';
+import Cart from '../Cart/Cart';
+import {Container, Col, Row} from 'react-bootstrap';
 
 const Contact = () => {
+  const [cartIsShown, setCartIsShown] = useState(false);
+
+  const showCartHandler = () => {
+    setCartIsShown(true);
+  }
+
+  const hideCartHandler = () => {
+    setCartIsShown(false);
+  }
+
   return (
-      <>
-      <NavBar />
+<>
+<NavBar  onShowCart={showCartHandler} />
+{cartIsShown && <Cart onClose={hideCartHandler} />}
+<Container>
+<Col>
+<Row>
       <div className={classes['contact-us']}>
-            <div className={classes.contact}>
+            <Container className={classes.contact}>
           <h5>Get in touch</h5>
           <p>Have an inquiry or some feedback for us? 
             <br />
@@ -23,10 +39,18 @@ const Contact = () => {
         <textarea rows="3" cols="45" placeholder="Your message..." className={classes.message} ></textarea>
        <button type="submit" className={classes.btn}>GET IN TOUCH</button>
 </form>
+</Container>
 </div>
-</div>
+</Row>
+</Col>
+</Container>
       <Footer />
-      </>
+     
+</>
+   
+
+           
+     
   )
 }
 

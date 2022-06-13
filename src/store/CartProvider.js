@@ -2,7 +2,7 @@ import React from 'react';
 import { useReducer } from 'react';
 import CartContext from './cart-context';
 
-//Component to manage the cart-context data and provide the context to all components that wan the data.
+//Component to manage the cart-context data and provide the context to all components that want the data.
 
 const defaultCartState = {
     items:[],
