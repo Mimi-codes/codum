@@ -13,8 +13,7 @@ const HeroSection = (props) => {
        <Container className={classes.container}>
         <Row>
     <Col xs={12} md={6}>
-      <p className={classes.variations}>there are many variations</p>
-      <h3 className={classes.perfect}>beauty is whatever brings perfect</h3>
+       <h3 className={classes.perfect}>beauty is whatever brings perfection</h3>
       <p className={classes.passages}>There are many variations of passages of lorem ipsum available
       but many have suffered</p>
     

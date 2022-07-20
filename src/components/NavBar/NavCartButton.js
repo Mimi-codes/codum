@@ -8,7 +8,7 @@ const cartCtx = useContext(CartContext);
 const {items} = cartCtx;
 const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
   return curNumber + item.quantity;
-  return curNumber + item.amount;
+  // return curNumber + item.amount;
 }, 0) //reduce helps to transform an array of data into a single value
 
 // const numberOfCartItems = cartCtx.items.length;

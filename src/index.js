@@ -17,12 +17,13 @@ import Blog from './components/NavBar/Blog';
 import About from './components/NavBar/About';
 import ReadMore from './components/Pages/ReadMore';
 import BuyNow from './components/Pages/BuyNow';
+import CartProvider from './store/CartProvider';
 
 const root = ReactDOM.createRoot(
   document.getElementById("root")
 );
 root.render(
-  
+  <CartProvider >
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
@@ -42,6 +43,7 @@ root.render(
 
     </Routes>
   </BrowserRouter>
+  </CartProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

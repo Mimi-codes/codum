@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import CartContext from '../../../store/cart-context';
-import {Card, Button} from 'react-bootstrap';
+import {Card, Button, Container} from 'react-bootstrap';
 import classes from './AvailableProducts.module.css';
 import Slider  from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -61,6 +61,7 @@ const AvailableProducts = (props) => {
   }
   return (
 <>
+{/* <Container className={classes.container}> */}
 <div className={classes.items}>
         <Slider {...settings}>
         {DUMMY_ITEMS.map((item) => (
@@ -80,6 +81,7 @@ const AvailableProducts = (props) => {
 ))}
         </Slider>
         </div>
+{/* </Container> */}
 </>
 )
 }

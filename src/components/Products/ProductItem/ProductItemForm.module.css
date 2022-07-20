@@ -8,3 +8,20 @@
     background: rgb(233, 154, 7);
     border-style: none;
 }
+
+
+/*MEDIA QUERY*/
+/*Mobile*/
+@media only screen and (max-width:480px) {
+    .form {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    
+    .btn {
+        width: 10rem;
+        background: rgb(233, 154, 7);
+        border-style: none;
+    }
+    
+}

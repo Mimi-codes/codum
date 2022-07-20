@@ -5,7 +5,7 @@
     }
     
     .about {
-        margin-right: 2.5rem;
+        margin-right: 1.5rem;
         font-size: 1.1rem;
         color: white;
         text-decoration: none;
@@ -13,8 +13,8 @@
     }
     
     .home {
-        margin-left: 30rem;
-        margin-right: 2.5rem;
+        margin-left: 18rem;
+        margin-right: 1.5rem;
         font-size: 1.1rem;
         color: white;
         text-decoration: none;
@@ -27,6 +27,7 @@
         background: rgb(233, 154, 7);
         border-style: none; 
         margin-right: 1.5rem;
+        margin-left: 18rem;
     }
     
     
@@ -56,6 +57,49 @@
         color: rgb(97, 97, 97);
     }
     
+
+   /*MEDIA QUERY*/
+    /*LAPTOP*/
+    @media only screen and (max-width: 1024px) {
+        .about {
+            margin-right: 1.5rem;
+            font-size: 1.1rem;
+            color: white;
+            text-decoration: none;
+            margin-top: 0.5rem;
+        }
+
+    
+        
+        .home {
+            margin-left: 8rem;
+            margin-right: 1.5rem;
+            font-size: 1.1rem;
+            color: white;
+            text-decoration: none;
+            margin-top: 0.4rem;
+        }
+        
+        .btn {
+            border-radius: 50px;
+            padding: 1rem 1rem;
+            background: rgb(233, 154, 7);
+            border-style: none; 
+            margin-right: 1.5rem;
+            margin-left: 8rem;
+            /* display: none; */
+        }
+        
+        
+        .button {
+            /* display: none; */
+            border-radius: 50px;
+            padding: 1rem 1rem;
+            background: rgb(233, 154, 7);
+            border-style: none; 
+        }
+       
+    }
 
     
     /*MEDIA QUERY*/
@@ -92,5 +136,16 @@
       align-items: center;
 }
 
+    }
+
+    @media only screen and (max-width: 320px) {
+.nav {
+    max-width: 130vw;
+    padding-right: 0.5rem;
+}
+
+.title {
+    font-size: 1.2rem;
+}
     }
     

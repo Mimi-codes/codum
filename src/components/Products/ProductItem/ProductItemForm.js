@@ -34,7 +34,7 @@ quantity: totalQty,
 price:props.item.price
 }
 cartCtx.items.push( itemInCart)
-console.log(itemInCart)
+// console.log(itemInCart)
 }
 
   return (
@@ -43,6 +43,7 @@ console.log(itemInCart)
            ref={quantityInputRef}
               label='Quantity' 
               input={{ 
+                id: 'quantity',
               type:'number',
               min: '1',
               max:'5',

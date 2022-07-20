@@ -27,25 +27,25 @@ function Footer() {
           <p>Find furnitures with amazing quality products and services.</p>
           <p>Call Us: (+234)123456789</p>
           </Col>
-      <Col xs={6} lg ={2} className={classes.useful}>
+      <Col xs={4} lg ={2} className={classes.useful}>
           <h4>useful links</h4>
           <a href='#'>product categories</a>
           <a href='#'>special promo</a>
           <a href='#'>affiliate product</a>
       </Col>
-      <Col xs={6} lg ={2} className={classes.useful}>
+      <Col xs={3} lg ={2} className={classes.useful}>
       <h4>information</h4>
           <a href='#'>about us</a>
           <a href='#'>offline store</a>
           <a href='#'>join us</a>
       </Col>
-      <Col xs={6} lg ={2} className={classes.useful}>
+      <Col xs={2} lg ={2} className={classes.useful}>
       <h4>support</h4>
           <a href='#'>FAQS</a>
           <a href='#'>support</a>
           <a href='#'>help center</a>
       </Col>
-      <Col xs={6} lg ={2} className={classes.useful}> 
+      <Col xs={3} lg ={2} className={classes.useful}> 
       <h4>socials</h4>
           <a href='#'>facebook</a>
           <a href='#'>instagram</a>

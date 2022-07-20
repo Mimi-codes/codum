@@ -8,21 +8,23 @@ const CartItem = props => {
     return (
         <>
         <li className={classes['cart-item']}>
-            <div> 
+            <div className={classes.summary}> 
                 <h2>{props.name}</h2>
-                <div className={classes.summary}>
+                <div>
                     <span className={classes.price}>{props.price}</span>
                     <span className={classes.amount}>x {props.quantity}</span>
-                    </div>
-                    </div>               
+                    </div>              
   
-<div className={classes.action}>
+<div className={classes.actions}>
     <button  className={classes.action} onClick={props.onAdd}>+</button>
     <button className={classes.action} onClick={props.onRemove}>-</button>
 </div>
+                    </div> 
      </li>
      </>
     );
 };
 
 export default CartItem; //rendered in Cart.js
+
+//onAdd and onRemove props function are both in <CartItem />in Cart.js
