@@ -33,6 +33,23 @@ color: gray;
 
 /*MEDIA QUERY*/
 /*Mobile*/
-@media only screen and (max-width:480px) {
+@media only screen and (max-width: 320px) {
+.container h4 {
+    font-size: 1.2rem;
+}
+    .links {
+    font-size: 0.7rem;
+        display: inline-flex;
+        justify-content: space-between;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.container {
+    margin-top: 1.5rem;
+    display: flex;
+    
+}
 
 }
+

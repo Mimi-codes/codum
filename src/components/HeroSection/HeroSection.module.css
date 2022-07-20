@@ -111,7 +111,10 @@ padding-top: 10rem;
 }
 
 .button, .btn {
-    max-width: 15rem;
-    /* display: none; */
+    max-width: 14rem;
+ }
+
+ .chair {
+    max-width: 18rem;
  }
 }

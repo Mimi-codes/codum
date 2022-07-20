@@ -140,7 +140,7 @@
 
     @media only screen and (max-width: 320px) {
 .nav {
-    max-width: 130vw;
+    max-width: 100vw;
     padding-right: 0.5rem;
 }
 

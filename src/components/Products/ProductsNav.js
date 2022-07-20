@@ -12,21 +12,24 @@ const ProductsNav = (props) => {
     <Col xs={12} md={7}>
 <h4>products</h4>
     </Col>
-    <Col xs={3} md={1}>
+    <div className={classes.links}>
+    <Col  md={1} >
     <Link activeClassName={classes.active} to="/popular">popular:</Link> 
     </Col>
-    <Col xs={2} md={1}>
-    <Link to="/all">all</Link> 
+
+    <Col  md={1} >
+    <Link to="/all" className={classes.all}>all</Link> 
     </Col>
-    <Col xs={2} md={1}>
+    <Col  md={1} >
     <Link to="/sofa">sofa</Link> 
         </Col>
-    <Col xs={2} md={1}>
+    <Col  md={1} >
     <Link to="/lamp">lamp</Link> 
     </Col>
-    <Col xs={2} md={1}>
+    <Col md={1} >
     <Link to="/chair">chair</Link> 
     </Col>
+    </div>
   </Row>
 </Container>
 
