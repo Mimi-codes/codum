@@ -77,7 +77,7 @@ const AvailableProducts = (props) => {
         <Card style={{ width: '18rem' }} className={classes.card}>
 <Card.Img variant="top" src={item.img} />
 <Card.Body className={classes['card-body']}>
-  <Card.Title>{item.name}</Card.Title>
+  <Card.Title style={{ fontSize: '1rem' }}>{item.name}</Card.Title>
   <Card.Text>
   <p>{item.description}</p>
  <p>{item.price}</p>
