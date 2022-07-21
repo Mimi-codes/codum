@@ -26,6 +26,7 @@ const AvailableProducts = (props) => {
  
 
   var settings = {
+    className: 'variable-width',
     dots: true,
     infinite: false,
     speed: 900,
@@ -55,7 +56,14 @@ const AvailableProducts = (props) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
-        }
+        }, 
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }, 
       }
     ]
   }
@@ -68,7 +76,7 @@ const AvailableProducts = (props) => {
                   <div className={classes.item}>
         <Card style={{ width: '18rem' }} className={classes.card}>
 <Card.Img variant="top" src={item.img} />
-<Card.Body className={classes['card-text']}>
+<Card.Body className={classes['card-body']}>
   <Card.Title>{item.name}</Card.Title>
   <Card.Text>
   <p>{item.description}</p>

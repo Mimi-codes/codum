@@ -16,7 +16,7 @@ const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
 
   return (
       <div>
-          <span>Cart</span>
+          <span className={classes.cart}>Cart</span>
       <span className={classes.badge}> 
            {numberOfCartItems} 
             </span> 

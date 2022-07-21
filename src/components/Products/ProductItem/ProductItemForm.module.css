@@ -25,3 +25,17 @@
     }
     
 }
+
+
+@media only screen and (max-width: 320px) {
+   
+.form {
+    margin-left: 0rem;
+}
+
+    .btn {
+        margin-top: 0.2rem;
+        font-size: 0.7rem;
+        max-width: 7rem;
+    }
+}

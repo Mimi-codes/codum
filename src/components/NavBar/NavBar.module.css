@@ -147,5 +147,21 @@
 .title {
     font-size: 1.2rem;
 }
+
+.home, .about {
+    font-size: 0.7rem;
+}
+
+.link {
+    font-size: 0.8rem;
+}
+
+.button, .btn {
+    max-width: 8rem;
+    padding: 0.5rem 0.2rem;
+    margin: 0.8rem 5rem 0.5rem 5rem;
+}
+
+
     }
     

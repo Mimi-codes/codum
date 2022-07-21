@@ -15,3 +15,9 @@
     background-origin: 1px solid blue;
     padding-left: 0.5rem;
 }
+
+@media only screen and (max-width: 320px) {
+    .input {
+        margin-left: 0rem;
+    }
+}
