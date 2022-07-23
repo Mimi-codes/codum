@@ -12,44 +12,34 @@
     text-transform: uppercase;
 }
 
-.container {
-    text-transform: uppercase;
-    margin-top: 4rem;
+.row {
+    margin-top: 2rem;
     padding-bottom: 2rem;
+    /* margin-left: 1rem; */
 }
 
-.container a {
+.row a {
     text-decoration: none;
     color: black;
 }
 
-.container a:active {
+.row a:active {
 color: gray;
 }
 
-.container a:hover {
+.row a:hover {
     color: rgb(233, 154, 7);
 }
 
+
+
+
 /*MEDIA QUERY*/
-/*Mobile*/
-@media only screen and (max-width: 320px) {
-.container h4 {
-    font-size: 1.2rem;
-}
-    .links {
-    font-size: 0.7rem;
-        display: inline-flex;
-        justify-content: space-between;
-    padding-right: 1rem;
-    padding-left: 1rem;
-}
 
-.container {
-    margin-top: 1.5rem;
-    display: flex;
+
+@media only screen and (max-width: 1073px) {
+
+
+
+    }
     
-}
-
-}
-

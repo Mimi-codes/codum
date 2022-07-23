@@ -93,32 +93,48 @@ padding-top: 10rem;
 
 
 @media only screen and (max-width:320px) {
-.hero {
-    max-width: 100vw;;
+
+    .button, .btn {
+     }
+
+     .chair {
+        width: 15.5rem;
+     }
 
 }
 
+/**/
 
-.perfect {
-    font-size: 1rem;
-    margin-top: 1.5rem;
-}
 
-.passages {
-    font-size: 0.7rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-
-.button, .btn {
-    max-width: 14rem;
- }
-
- .link {
-    font-size: 0.8rem;
- }
-
- .chair {
-    max-width: 18rem;
- }
-}
+@media only screen and (max-width:583px) {
+    .hero {
+        max-width: 100vw;;
+    
+    }
+    
+    
+    .perfect {
+        font-size: 1.1rem;
+        margin-top: 1.5rem;
+    }
+    
+    .passages {
+        font-size: 0.7rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    
+    .button, .btn {
+        max-width: 12rem;
+        margin-left: 5rem;
+     }
+    
+     .link {
+        font-size: 0.7rem;
+     }
+    
+     .chair {
+        max-width: 20rem;
+        margin-left: 1.5rem;
+     }
+    }

@@ -89,13 +89,17 @@
 
 }
 
-@media only screen and (max-width:320px) {
+@media only screen and (max-width:583px) {
     .container {
     margin-top: 2rem;    
     }
 
     .container h3 {
         font-size: 1.2rem;
+    }
+
+    .container a {
+        margin-left: 0.5rem;
     }
 
     .container p, .container a {

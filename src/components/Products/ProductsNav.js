@@ -7,31 +7,30 @@ const ProductsNav = (props) => {
   
   return (
      <>
-<Container className={classes.container}>
-    <Row>
-    <Col xs={12} md={7}>
-<h4>products</h4>
-    </Col>
-    <div className={classes.links}>
-    <Col  md={1} >
-    <Link activeClassName={classes.active} to="/popular">popular:</Link> 
+<Container >
+    <Row className={classes.row} >
+    <Col xs={4} sm={4} md={3} lg={4}  >
+    <Link activeClassName={classes.active} to="/popular">Popular:</Link> 
     </Col>
 
-    <Col  md={1} >
-    <Link to="/all" className={classes.all}>all</Link> 
-    </Col>
-    <Col  md={1} >
-    <Link to="/sofa">sofa</Link> 
-        </Col>
-    <Col  md={1} >
-    <Link to="/lamp">lamp</Link> 
-    </Col>
-    <Col md={1} >
-    <Link to="/chair">chair</Link> 
-    </Col>
-    </div>
-  </Row>
-</Container>
+<Col xs={2} sm={2} md={2} lg={2} >
+<Link to="/all">All</Link>
+</Col>
+
+<Col xs={2} sm={2} md={2} lg={2}> 
+  <Link to="/sofa">Sofa</Link>
+  </Col>
+
+<Col xs={2} sm={2} md={2} lg={2}>   
+ <Link to="/lamp">Lamp</Link>
+ </Col>
+
+<Col xs={2} sm={2} md={2} lg={2}>
+<Link to="/chair">Chair</Link>
+</Col>
+
+    </Row>
+   </Container>
 
 </>
    

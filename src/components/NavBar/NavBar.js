@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const NavBar = (props) => {
 return (
   <Navbar bg="" expand="lg" fixed='top' className={classes.nav}>
-  <Container className={classes.container}>
+  <Container className={classes.container} fluid>
     <Navbar.Brand  className={classes.title} >FURNITURE</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
