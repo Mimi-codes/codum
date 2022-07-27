@@ -1,17 +1,23 @@
 
  .container {
     margin-left: 3rem;
+    margin-top: 1rem;
 }
 
-a {
+.links {
+    margin-top: 1rem;
+}
+
+.links a {
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
     margin-left: 4rem;
+    text-transform: uppercase;
 }
 
-a:nth-child(1) {
-    margin-left: 32rem;
+.links a:nth-child(1) {
+    margin-left: 26rem;
 }
 
 
@@ -22,26 +28,30 @@ font-size: 1.8rem;
 
 
 
-.btn {
+ .btn {
     border-radius: 50px;
     padding: 1rem 1rem;
     background: rgb(233, 154, 7);
     border-style: none; 
     margin-right: 1.5rem;
     margin-left: 18rem;
+text-transform: uppercase;
 }
 
 
-.button {
+ .button {
+    text-transform: uppercase;
     border-radius: 50px;
     padding: 1rem 1rem;
     background: rgb(233, 154, 7);
     border-style: none; 
 }
 
-.button a {
-    margin-left: 0;
+.link {
+    text-decoration: none;
+    color: white;
 }
+
 
 .nav {
     background: #B6D0E2;
@@ -60,14 +70,20 @@ font-size: 1.8rem;
     font-size: 1.5rem;
 }
 
-a {
+.links {
+    margin-top: 1rem;
+    
+}
+
+.links a:nth-child(1) {
+    margin-left: 0rem;
+}
+
+.links a {
     margin-left: 0;
     font-size: 1rem;
     text-align: center;
-}
-
-a:nth-child(1) {
-    margin-left: 0;
+    display: block;
 }
 
 .btn {
@@ -84,9 +100,7 @@ margin-top: 0.2rem;
     margin: auto;
 }
 
-.button a {
-    margin-left: 0;
-}
+
 }
 
 
@@ -98,17 +112,17 @@ margin-top: 0.2rem;
     .title {
         font-size: 1.5rem;
     }
-    
-    a {
-        margin-left: 0;
-        font-size: 1rem;
-        text-align: center;
+
+    .links a:nth-child(1) {
+        margin-left: 0rem;
     }
     
-    a:nth-child(1) {
-        margin-left: 0;
-    }
-    
+.links a {
+    margin-left: 0;
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+}
     .btn {
         padding: 0.5rem 0;
     margin: auto;
@@ -131,5 +145,6 @@ margin-top: 0.2rem;
 
 
     
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 992px) {
+
 }

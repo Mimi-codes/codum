@@ -1,4 +1,4 @@
-.input {
+/*.input {
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
@@ -15,9 +15,29 @@
     background-origin: 1px solid blue;
     padding-left: 0.5rem;
 }
+*/
 
-@media only screen and (max-width: 583px) {
-    .input {
-        margin-left: 0rem;
-    }
+
+.input {
+    text-align: center;
+}
+
+.input Input {
+margin-left: 0.5rem;
+border: 2px solid rgb(233, 154, 7);
+}
+
+.input input {
+    text-align: center;
+}
+
+/*576,768,992,1200,1400*/
+
+@media only screen and (max-width: 576px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 1200px) {
 }

@@ -9,23 +9,23 @@ const ProductsNav = (props) => {
      <>
 <Container >
     <Row className={classes.row} >
-    <Col xs={4} sm={4} md={3} lg={4}  >
+    <Col xs={4} sm={4} md={2} lg={1}  >
     <Link activeClassName={classes.active} to="/popular">Popular:</Link> 
     </Col>
 
-<Col xs={2} sm={2} md={2} lg={2} >
+<Col xs={2} sm={2} md={1} lg={1} >
 <Link to="/all">All</Link>
 </Col>
 
-<Col xs={2} sm={2} md={2} lg={2}> 
+<Col xs={2} sm={2} md={1} lg={1}> 
   <Link to="/sofa">Sofa</Link>
   </Col>
 
-<Col xs={2} sm={2} md={2} lg={2}>   
- <Link to="/lamp">Lamp</Link>
+<Col xs={2} sm={2} md={1} lg={1}>   
+<Link to="/lamp">Lamp</Link>
  </Col>
 
-<Col xs={2} sm={2} md={2} lg={2}>
+<Col xs={2} sm={2} md={1} lg={1}>
 <Link to="/chair">Chair</Link>
 </Col>
 

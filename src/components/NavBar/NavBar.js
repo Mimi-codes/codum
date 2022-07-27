@@ -12,11 +12,13 @@ return (
     <Navbar.Brand  className={classes.title} >FURNITURE</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="me-auto mt-4 links">
+      <Nav >
+        <div className={classes.links}>
       <Link to="/" className={classes.home}>Home</Link> 
  <Link to='/about' className={classes.about}>About</Link>
  <Link to='/blog' className={classes.about}>Blog</Link>
  <Link to='/contact' className={classes.about}>Contact</Link>
+      </div>
         <Button  className={classes.btn} variant="outline-light" onClick={props.onShowCart}>
           <NavCartButton /></Button> 
         <Button className={classes.button} variant="outline-light" > <Link to="/login" className={classes.link}>Log In</Link> </Button> 

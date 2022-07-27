@@ -1,6 +1,12 @@
 .main {
     margin-top: 10rem;
 }
+.items {
+    margin-left: 5.5rem;
+    margin-right: 3.5rem;
+    display: flex;
+    margin-bottom: 7rem;
+}
 
 /*MEDIA QUERY*/
 /*Mobile*/
