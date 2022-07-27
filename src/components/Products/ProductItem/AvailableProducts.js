@@ -9,9 +9,7 @@ import ProductItemForm from '../ProductItem/ProductItemForm';
 
 const DUMMY_ITEMS = [
 
-  {id: 'm1', name: 'FUR ARM CHAIR', description: 'Comfy', price: 800, img: require('../../../assets/chair/fur.jpg')},
-  {id: 'm2', name: 'SWING ARM CHAIR', description: 'Comfy', price: 800, img: require('../../../assets/chair/comfy2.jpg')},
-  {id: 'm3', name: 'PENDANT LAMP', description: 'Yummy', price: 800, img: require('../../../assets/lamp/pendantlamp.jpg')},
+  {id: 'm1', name: 'ARM CHAIR', description: 'Comfy', price: 800, img: require('../../../assets/chair/chair.png')},
   {id: 'm4', name: 'LED LAMP', description: 'Led lamp', price: 800, img: require('../../../assets/lamp/led.jpg')},
   {id: 'm5', name: 'LONG SOFA', description: 'Comfy', price: 800, img: require('../../../assets/sofa/images.jpg')},
   {id: 'm6', name: 'PATTERN COUCH', description: 'Comfy', price: 800, img: require('../../../assets/sofa/s3.jpg')},
@@ -30,7 +28,7 @@ const AvailableProducts = (props) => {
       
       {DUMMY_ITEMS.map((item) => (
         
-        <Card style={{ width: '18rem' }}>
+        <Card className={classes.card} style={{ width: '18rem' }}>
        <Card.Img variant="top" src={item.img} />
        <Card.Body>
          <Card.Title>{item.name}</Card.Title>
