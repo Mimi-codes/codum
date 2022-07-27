@@ -44,7 +44,9 @@ const Contact = () => {
 </Row>
 </Col>
 </Container>
+<div className={classes.footer}>
       <Footer />
+      </div>
      
 </>
    

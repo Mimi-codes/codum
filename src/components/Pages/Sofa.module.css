@@ -1,32 +1,31 @@
 
-.items {
+.main {
+    margin-top: 2rem;
+}
+
+.items {    
     justify-content: center;
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 7rem;
+    height: 100%;
+
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
     height: 100%;
 }
 
 
 .body {
     text-align: center;
- }
-
-
-.img {
-    width: 5rem;
 }
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-    height: 100%;
-    margin-left: 3rem;
-}
-
-
-   /*MEDIA QUERY*/
-    /*576,768,992,1200,1400*/
 
 @media only screen and (max-width: 576px) {
+   .main {
+    margin-top: 1rem;
+   }
+   
     .items {
         margin-left: 0;
         margin-right: 0;
@@ -43,6 +42,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+.main {
+    margin-top: 0.8rem;
+}
+
 .items {
     /* margin-left: 0.5rem; */
     /* margin-right: 0.5rem; */

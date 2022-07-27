@@ -7,7 +7,7 @@ const ProductsNav = (props) => {
   
   return (
      <>
-<Container >
+<Container className={classes.nav}>
     <Row className={classes.row} >
     <Col xs={4} sm={4} md={2} lg={1}  >
     <Link activeClassName={classes.active} to="/popular">Popular:</Link> 

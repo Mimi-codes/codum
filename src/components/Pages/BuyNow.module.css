@@ -1,17 +1,32 @@
 .main {
-    margin-top: 10rem;
+    margin-top: 0.2rem;
 }
 .items {
-    margin-left: 5.5rem;
-    margin-right: 3.5rem;
+ justify-content: center;
     display: flex;
-    margin-bottom: 7rem;
+    margin-bottom: 2rem;
+    height: 100%;
 }
 
-/*MEDIA QUERY*/
-/*Mobile*/
-@media only screen and (max-width:480px) {
-.main {
-    margin-top: 6rem;
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    height: 100%;
+    margin-left: 3rem;
+    text-align: center;
 }
+
+
+
+@media only screen and (max-width: 576px) {
+    
+
+   
 }
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+}
+/**/

@@ -4,8 +4,6 @@ import {Card, Button, Container} from 'react-bootstrap';
 import classes from './AvailableProducts.module.css';
 import Slider  from "react-slick";
 import ProductItemForm from '../ProductItem/ProductItemForm';
-// import { Carousel } from 'react-bootstrap';
-
 
 const DUMMY_ITEMS = [
 
@@ -27,10 +25,9 @@ const AvailableProducts = (props) => {
 <div className={classes.items}>
       
       {DUMMY_ITEMS.map((item) => (
-        
         <Card className={classes.card} style={{ width: '18rem' }}>
        <Card.Img variant="top" src={item.img} />
-       <Card.Body>
+       <Card.Body className={classes.body}>
          <Card.Title>{item.name}</Card.Title>
          <Card.Text> {item.description}  </Card.Text>
           <Card.Text> {item.price} 

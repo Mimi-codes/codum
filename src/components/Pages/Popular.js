@@ -38,24 +38,8 @@ const Popular = () => {
     {cartIsShown && <Cart onClose={hideCartHandler} />}
 <div className={classes.main}>    
     <ProductsNav />
-    
-<div className={classes.items}>
-      
-      {DUMMY_ITEMS.map((item) => (
-        
-        <Card style={{ width: '18rem' }}>
-       <Card.Img variant="top" src={item.img} />
-       <Card.Body>
-         <Card.Title>{item.name}</Card.Title>
-         <Card.Text> {item.description}  </Card.Text>
-          <Card.Text> {item.price} 
-          <ProductItemForm item={item} />
-           </Card.Text>
-       </Card.Body>
-       </Card>
-       ))}
-       </div>
-  </div>
+ <AvailableProducts />
+ </div>
   <Footer />
   </>
   )

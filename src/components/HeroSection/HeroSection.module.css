@@ -67,7 +67,7 @@ a {
 @media only screen and (max-width: 576px) {
   .container {
     padding-top: 12rem;
-    margin-top: 2rem;
+    margin-top: 0;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 1rem;
@@ -125,12 +125,17 @@ text-align: center;
     
       .text {
         margin-left: 2rem;
+        margin-top: 5rem;
+        text-align: center;
+        margin-right: 0;
+        font-size: 1rem;
       }
         
         
         .text p {
             margin-left: 0;
             text-align: justify;
+            font-size: 1rem;
         }
         
         
@@ -148,6 +153,8 @@ text-align: center;
         .chair {
             display: none;
         }
+
+        
     
 
 }

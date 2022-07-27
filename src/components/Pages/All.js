@@ -7,6 +7,9 @@ import { useState } from 'react';
 import NavBar from '../NavBar/NavBar';
 import Cart from '../Cart/Cart';
 
+
+
+
 const All = () => {
   const [cartIsShown, setCartIsShown] = useState(false);
 

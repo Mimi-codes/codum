@@ -1,17 +1,12 @@
-
-
 .container  {
     margin-top: 14rem;
     /* background: #B6D0E2; */
     /* padding:; */
 }
 
-.container h3, .container h4 {
-    margin-bottom: 2rem;
-}
 
 .footer {
-    margin-left: 3rem;
+    margin-left: 7rem;
 }
 
 .container p {
@@ -20,8 +15,9 @@
     margin-right: 0.3rem;
 }
 
-.useful {
+.useful h4 {
     text-transform: capitalize;
+    font-size: 1.3rem;
 }
 
 .useful a {
@@ -29,6 +25,7 @@
     color: gray;
     display: block;
     margin-top: 1rem;
+    text-transform: capitalize;
 }
 
 .right {
@@ -41,21 +38,21 @@
 
 /*MEDIA QUERY*/
 /*Mobile*/
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:576px) {
 
     .footer {
         margin-left: 0;
         font-size: 0.5rem;
     }
 
-    .container  {
-        margin-top: 1rem;
-        margin-left: 0.5rem;
-    }
+.container {
+    text-align: center;
+}
     
     .container h3 {
         text-align: center;
         margin-bottom: 1rem;
+        margin-top: 4rem;
         font-size: 0.7rem;
     }
 
@@ -72,12 +69,14 @@
 
     .useful h4 {
         margin-bottom: 0.5rem;
+        margin-left: 0.6rem;
         font-size: 0.5rem;
     }
     
     .useful a {
         /* text-align: center; */
         margin-top: 0.1rem;
+        margin-left: 0.6rem;
     }
     
     .right {
@@ -87,19 +86,22 @@
     }
     
 
+
 }
 
-@media only screen and (max-width:583px) {
+@media only screen and (max-width:768px) {
     .container {
-    margin-top: 2rem;    
-    }
+    margin-top: 8rem;    
+        margin-left: 0;
+}
 
     .container h3 {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        margin-left: 0;
     }
 
     .container a {
-        margin-left: 0.5rem;
+        margin-left: 0rem;
     }
 
     .container p, .container a {
@@ -113,6 +115,14 @@
     .useful h4 {
         font-size: 0.7rem;
     }
+    
 
+    .useful a {
+        /* margin-left: 1rem; */
+    }
+
+.right {
+    text-align: center;
+}
 
 }
