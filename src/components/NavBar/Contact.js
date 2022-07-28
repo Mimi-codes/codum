@@ -22,7 +22,7 @@ const Contact = () => {
 <NavBar  onShowCart={showCartHandler} />
 {cartIsShown && <Cart onClose={hideCartHandler} />}
 <Container>
-<Col>
+<Col> 
 <Row>
       <div className={classes['contact-us']}>
             <Container className={classes.contact}>

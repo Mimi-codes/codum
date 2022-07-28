@@ -1,8 +1,9 @@
-
 .create {
     margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+ 
 
 .sign {
     box-shadow: 0 4px 8px 0px rgb(0 0 0 / 80%);
@@ -12,32 +13,41 @@
     padding-bottom: 1.5rem;
     padding-top: 0.5rem;
     margin-top: 3rem;
-    margin-bottom: 0rem;
-    margin-left: 25rem;
-    margin-right: 25rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .sign h5 {
     text-align: center;
+    text-transform: uppercase;
     margin: 2.5rem 0 1rem 0;
 }
 
 .sign form {
-    margin: 0 ;
+    /* margin: 0 ; */
+    
 }
 
 
-.sign .name {
+.sign input {
     text-align: center;
     display: block;
-    margin: 1.5rem 1rem 0 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    /* margin: 1.5rem 1rem 0 4rem; */
     width: 24rem;
     padding: 0.5rem 0rem;
     justify-content: center;
     border: 2px solid rgb(233, 154, 7);
 }
 
-.btn {
+
+
+
+.form .btn {
 margin: 1.5rem 1rem 2rem 4rem;
 background: rgb(233, 154, 7);
 padding: 0.5rem 0rem;
@@ -48,100 +58,106 @@ border-style: none;
 width: 24rem;
 }
 
+.sign textarea {
+    text-align: center;
+    width: 24rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
 
 
 .sign p {
     text-align: center;
     margin-bottom: 3rem;
-    font-size: 0.8rem;
-    
 }
 
 .link {
     text-decoration: none;
+    color: rgb(233, 154, 7);;
 }
 
-
-.box {
-    display: flex;
-margin-left: 4.2rem;
-margin-top: 1.5rem;
-}
-
-
-.checkbox {
-    margin-top: 0.5rem;
-}
-
-.box p {
-    margin-left: 0.5rem;
-    color: gray;
-    font-size: 0.9rem;
-    margin-top: 0.4rem;
-}
 
 
 
 /*MEDIA QUERY*/
 /*Mobile*/
-@media only screen and (max-width:480px) {
+@media only screen and (max-width: 576px) {
 
-
-    .create {
-        margin-top: 5.5rem;
-        margin-bottom: 4rem;
+.create {
+        margin-top: 3.5rem;
     }
 
     .sign {
         box-shadow: 0 4px 8px 0px rgb(0 0 0 / 80%);
         background: whitesmoke;
-        width: 18rem;
+        width: 22rem;
         border-radius: 5px;
-        margin: 3rem 0rem 2rem 2rem;
-        padding-bottom: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        /* margin: 3rem 0rem 2rem 2rem; */
+        padding-bottom: 1rem;
         padding-top: 0.5rem;
-    }
-
-    .sign h5 {
-        text-align: center;
+        margin-bottom: 1rem;
     }
     
     .sign p {
-    text-align: center; 
+        margin-bottom: 0;
     }
     
-    .sign .name  {
+    .sign input {
         text-align: center;
         display: block;
-        margin: 1.5rem 0rem 0 1rem;
-        width: 16rem;
+        margin: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 13rem;
         padding: 0.5rem 0rem;
         justify-content: center;
-       border: 0.5px solid rgb(233, 154, 7); 
+        border: 0.5px solid rgb(233, 154, 7);
     }
 
-.btn {
-margin: 1rem 0rem 2rem 1rem;
-width: 16rem;
+    .sign textarea {
+        width: 13rem;
+        margin-right: auto;
+        margin-left: 3.8rem;
+    }
+    
+.form .btn {
+    margin: 1.5rem 0 2rem 0;
+    margin-left: 4.5rem;
+    margin-right: auto;
+    width: 13rem;
+    
 }
 
-.sign .box {
-    display: flex;
-margin-left: 1rem;
-display: none;
+
+
+
 }
 
 
-.checkbox {
-    margin-top: 0.5rem;
-}
+@media only screen and (max-width: 768px) {
+    .create {
+        margin-bottom: 1rem;
+    }
+
+    .form .btn {
+        margin: 1.5rem 0 2rem 0;
+        margin-left: 4rem;
+        margin-right: auto;
+        width: 24rem;
+        
+    }
+    
+}  
 
 
-.box p {
-    margin-left: 0.5rem;
-    color: gray;
-    font-size: 0.8rem;
-    margin-top: 0.4rem;
-}
-
+@media only screen and (max-width: 1400px) and (min-width: 986px) {   
+    .form .btn {
+        margin: 1.5rem 0 2rem 0;
+        margin-left: 4rem;
+        margin-right: auto;
+        width: 24rem;
+        
+    }
 }

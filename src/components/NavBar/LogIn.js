@@ -28,12 +28,6 @@ const LogIn = () => {
             <form>
         <input type="email"  placeholder="Email" className={classes.mail} />
         <input type="password"  placeholder="Password" className={classes.mail} />
-
-
-        <div className={classes.box}>
-        <input type='checkbox' className={classes.checkbox} />
-        <p>Keep me signed in</p>
-        </div>
         
        <button type="submit" className={classes.btn}>SIGN IN</button>
 </form>

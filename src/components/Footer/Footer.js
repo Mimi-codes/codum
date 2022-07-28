@@ -6,47 +6,34 @@ import { Container, Row, Col } from 'react-bootstrap';
 function Footer() {
   return (
 <>
-    {/* <Container> */}
-    {/* <Row> */}
-      {/* <Col sm={8} lg ={4}> */}
-          {/* <h3>join our mailing list</h3> */}
-          {/* <p>Sign up to be the first to hear about exclusive deals, special offers and upcoming collections.</p> */}
-          {/* </Col> */}
-      {/* <Col sm={4} lg ={4}> */}
-       {/* <input type ='text' placeholder='Enter a valid email address' /> */}
-       {/* <hr /> */}
-       {/* </Col> */}
-{/* </Row> */}
-{/* </Container> */}
-
 <footer className={classes.footer}>
-    <Container className={classes.container}>
+    <Container className={classes.container} fluid>
     <Row className={classes.row}>
-      <Col xs={12} sm={12} md={2} lg ={4}>
+      <Col xs={12} sm={12} md={12} lg ={4} className={classes.fur}>
           <h3>FURNITURE</h3>
           <p>Find furnitures with amazing quality products and services. 
          <br/>   Call Us: (+234)123456789</p>
-          
+           
           </Col>
-      <Col xs={3} sm={12} md={2} lg ={2} className={classes.useful}>
+      <Col xs={6} sm={12} md={3} lg ={2} className={classes.useful}>
           <h4> links</h4>
           <a href='#'>product categories</a>
           <a href='#'>special promo</a>
           <a href='#'>affiliate product</a>
       </Col>
-      <Col xs={2} sm={12} md={2} lg ={2} className={classes.useful}>
+      <Col xs={6} sm={12} md={3} lg ={2} className={classes.useful}>
       <h4>info</h4>
           <a href='#'>about us</a>
           <a href='#'>offline store</a>
           <a href='#'>join us</a>
       </Col>
-      <Col xs={3} sm={12} md={2} lg ={2} className={classes.useful}>
+      <Col xs={6} sm={12} md={3} lg ={2} className={classes.useful}>
       <h4>support</h4>
-          <a href='#'>FAQS</a>
+          <a href='#'>FAQS</a> 
           <a href='#'>support</a>
           <a href='#'>help center</a>
       </Col>
-      <Col xs={3} sm={12} md={2} lg ={2} className={classes.useful}> 
+      <Col xs={6} sm={12} md={3} lg ={2} className={classes.useful}> 
       <h4>socials</h4>
           <a href='#'>facebook</a>
           <a href='#'>instagram</a>

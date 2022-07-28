@@ -29,12 +29,7 @@ const SignUp = () => {
         <input  type="name"  placeholder="Full Name" className={classes.name} />
         <input type="email"  placeholder="Email address" className={classes.name} />
         <input type="password"  placeholder="Password" className={classes.name} />
-        {/* <label for='box'>Keep </label> */}
-        <div className={classes.box}>
-        <input type='checkbox' className={classes.checkbox} />
-        <p>Keep me signed in</p>
-        </div>
-
+    
 
 
        <button type="submit" className={classes.btn}>CREATE ACCOUNT</button>

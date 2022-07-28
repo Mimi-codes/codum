@@ -3,7 +3,7 @@
     margin-left: auto;
     margin-right: auto;
 }
-
+ 
 
 .contact {
     box-shadow: 0 4px 8px 0px rgb(0 0 0 / 80%);
@@ -13,23 +13,31 @@
     padding-bottom: 1.5rem;
     padding-top: 0.5rem;
     margin-top: 3rem;
-    margin-bottom: 0rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .contact h5 {
     text-align: center;
+    text-transform: uppercase;
     margin: 2.5rem 0 1rem 0;
 }
 
 .contact form {
-    margin: 0 ;
+    /* margin: 0 ; */
+    
 }
 
 
 .contact input {
     text-align: center;
     display: block;
-    margin: 1.5rem 1rem 0 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    /* margin: 1.5rem 1rem 0 4rem; */
     width: 24rem;
     padding: 0.5rem 0rem;
     justify-content: center;
@@ -40,7 +48,7 @@
 
 
 .btn {
-margin: 1.5rem 1rem 2rem 4rem;
+margin: 1.5rem 1rem 2rem 3rem;
 background: rgb(233, 154, 7);
 padding: 0.5rem 0rem;
 border-radius: 5px;
@@ -52,6 +60,9 @@ width: 24rem;
 
 .contact textarea {
     text-align: center;
+    width: 24rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
 }
 
 
@@ -68,41 +79,34 @@ width: 24rem;
     margin: 1.5rem 1rem 0 4rem;
     padding: 0.5rem 0rem;
     border-radius: 5px;
-    border: 0.5px solid rgb(233, 154, 7);;
+    border: 0.5px solid rgb(233, 154, 7);
     width: 24rem;
 }
 
-
-.footer {
-    margin-top: 0;
-}
 
 /*MEDIA QUERY*/
 /*Mobile*/
 @media only screen and (max-width: 576px) {
 
 .contact-us {
-        margin-top: 2.5rem;
-        margin-left: auto;
-        margin-right: auto;
+        margin-top: 3.5rem;
     }
 
     .contact {
         box-shadow: 0 4px 8px 0px rgb(0 0 0 / 80%);
         background: whitesmoke;
-        width: 15rem;
+        width: 22rem;
         border-radius: 5px;
-        margin: 3rem 0rem 2rem 2rem;
-        padding-bottom: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        /* margin: 3rem 0rem 2rem 2rem; */
+        padding-bottom: 1rem;
         padding-top: 0.5rem;
-    }
-
-    .contact h5 {
-        text-align: center;
+        margin-bottom: 1rem;
     }
     
     .contact p {
-    text-align: center; 
+        margin-bottom: 0;
     }
     
     .contact input {
@@ -111,26 +115,47 @@ width: 24rem;
         margin: 1.5rem;
         margin-left: auto;
         margin-right: auto;
-        width: 12rem;
+        width: 13rem;
         padding: 0.5rem 0rem;
         justify-content: center;
         border: 0.5px solid rgb(233, 154, 7);
     }
 
+    .contact textarea {
+        width: 13rem;
+        margin-right: auto;
+        margin-left: 3.8rem;
+    }
+    
 .message {
     margin-top: 0.5rem;
     margin-left: auto;
+    margin-right: auto;
+    /* width: 24rem; */
+
+}
+
+.btn {
+    margin: 1.5rem 0 2rem 0;
+    margin-left: 3.8rem;
     margin-right: auto;
     width: 13rem;
     
 }
 
-.btn {
-margin: 0.5rem 0rem 2rem 0rem;
-width: 16rem;
+
+
+
 }
 
 
+@media only screen and (max-width: 768px) {
+    .contact {
+        margin-bottom: 1rem;
+    }
+    
+}  
 
 
+@media only screen and (max-width: 1400px) and (min-width: 986px) {   
 }
